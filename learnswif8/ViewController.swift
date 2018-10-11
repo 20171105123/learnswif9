@@ -9,7 +9,62 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    var temp = 0
+    var ap = 0
+    @IBOutlet var learnswifss: UITextField!
+    
+    @IBAction func button1(_ sender: Any) {
+        learnswifss.text=learnswifss.text!+"1"
+    }
+    @IBAction func button2(_ sender: Any) {
+        learnswifss.text=learnswifss.text!+"2"
+    }
+    @IBAction func button3(_ sender: Any) {
+        learnswifss.text=learnswifss.text!+"3"
+    }
+    @IBAction func button4(_ sender: Any) {
+        learnswifss.text=learnswifss.text!+"4"
+    }
+    @IBAction func button5(_ sender: Any) {
+        learnswifss.text=learnswifss.text!+"5"
+    }
+    @IBAction func button6(_ sender: Any) {
+        learnswifss.text=learnswifss.text!+"6"
+    }
+    @IBAction func button7(_ sender: Any) {
+        learnswifss.text=learnswifss.text!+"7"
+    }
+    @IBAction func button8(_ sender: Any) {
+        learnswifss.text=learnswifss.text!+"8"
+    }
+    @IBAction func button9(_ sender: Any) {
+        learnswifss.text=learnswifss.text!+"9"
+    }
+    @IBAction func buttonlearnswif(_ sender: Any) {
+        if(ap == 1){
+            var sum = 0
+            sum = temp + Int(learnswifss.text!)!
+            learnswifss.text = "\(sum)"
+        }
+        if(ap == 2){
+            var sums = 0
+            sums = temp - Int(learnswifss.text!)!
+            learnswifss.text = "\(sums)"
+        }
+    }
+    @IBAction func buttonadd(_ sender: Any) {
+        temp = Int(learnswifss.text!)!
+        learnswifss.text = ""
+        ap = 1
+    }
+    @IBAction func buttonminus(_ sender: Any) {
+        temp = Int(learnswifss.text!)!
+        learnswifss.text = ""
+        ap = 2
+    }
+    @IBAction func buttonclear(_ sender: Any) {
+        learnswifss.text = ""
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
