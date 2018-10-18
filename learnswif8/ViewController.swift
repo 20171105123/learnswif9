@@ -40,6 +40,9 @@ class ViewController: UIViewController {
     @IBAction func button9(_ sender: Any) {
         learnswifss.text=learnswifss.text!+"9"
     }
+    @IBAction func button0(_ sender: Any) {
+        learnswifss.text=learnswifss.text!+"0"
+    }
     @IBAction func buttonlearnswif(_ sender: Any) {
         if(ap == 1){
             var sum = 0
@@ -50,6 +53,16 @@ class ViewController: UIViewController {
             var sums = 0
             sums = temp - Int(learnswifss.text!)!
             learnswifss.text = "\(sums)"
+        }
+        if(ap == 3){
+            var pull = 0
+            pull = temp * Int(learnswifss.text!)!
+            learnswifss.text = "\(pull)"
+        }
+        if(ap == 4){
+            var bull = 0
+            bull = temp / Int(learnswifss.text!)!
+            learnswifss.text = "\(bull)"
         }
     }
     @IBAction func buttonadd(_ sender: Any) {
@@ -64,6 +77,16 @@ class ViewController: UIViewController {
     }
     @IBAction func buttonclear(_ sender: Any) {
         learnswifss.text = ""
+    }
+    @IBAction func buttontimes(_ sender: Any) {
+        temp = Int(learnswifss.text!)!
+        learnswifss.text = ""
+        ap = 3
+    }
+    @IBAction func buttoninto(_ sender: Any) {
+        temp = Int(learnswifss.text!)!
+        learnswifss.text = ""
+        ap = 4
     }
     override func viewDidLoad() {
         super.viewDidLoad()
