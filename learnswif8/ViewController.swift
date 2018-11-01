@@ -64,6 +64,7 @@ class ViewController: UIViewController {
             bull = temp / Int(learnswifss.text!)!
             learnswifss.text = "\(bull)"
         }
+        
     }
     @IBAction func buttonadd(_ sender: Any) {
         temp = Int(learnswifss.text!)!
@@ -88,11 +89,16 @@ class ViewController: UIViewController {
         learnswifss.text = ""
         ap = 4
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-
+    @IBAction func buttonx²(_ sender: Any) {
+        var c = 0;
+       temp = Int(learnswifss.text!)!
+        c = temp*temp
+        learnswifss.text = "\(c)"
+    }
 }
 
