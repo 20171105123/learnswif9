@@ -12,47 +12,118 @@ class ViewController: UIViewController
                                                                                           {
     var temp = 0
     var ap = 0
+    var agian = 0
     @IBOutlet var learnswifss: UITextField!
     
     @IBAction func button1(_ sender: Any)
     {
-        learnswifss.text=learnswifss.text!+"1"
+        if (agian == 1)
+        {
+            learnswifss.text=learnswifss.text!+"1"
+        }
+        else{
+            learnswifss.text = "1"
+        }
+        agian = 1
     }
     @IBAction func button2(_ sender: Any)
     {
-        learnswifss.text=learnswifss.text!+"2"
+        if (agian == 1)
+        {
+            learnswifss.text=learnswifss.text!+"2"
+        }
+        else{
+            learnswifss.text = "2"
+        }
+        agian = 1
     }
     @IBAction func button3(_ sender: Any)
     {
-        learnswifss.text=learnswifss.text!+"3"
+        if (agian == 1)
+        {
+            learnswifss.text=learnswifss.text!+"3"
+        }
+        else{
+            learnswifss.text = "3"
+        }
+        agian = 1
     }
     @IBAction func button4(_ sender: Any)
     {
-        learnswifss.text=learnswifss.text!+"4"
+        if (agian == 1)
+        {
+            learnswifss.text=learnswifss.text!+"4"
+        }
+        else{
+            learnswifss.text = "4"
+        }
+        agian = 1
     }
     @IBAction func button5(_ sender: Any)
     {
-        learnswifss.text=learnswifss.text!+"5"
+        if (agian == 1)
+        {
+             learnswifss.text=learnswifss.text!+"5"
+        }
+        else{
+            learnswifss.text = "5"
+        }
+        agian = 1
     }
     @IBAction func button6(_ sender: Any)
     {
-        learnswifss.text=learnswifss.text!+"6"
+        if (agian == 1)
+        {
+            learnswifss.text=learnswifss.text!+"6"
+        }
+        else{
+            learnswifss.text = "6"
+        }
+        agian = 1
     }
     @IBAction func button7(_ sender: Any)
     {
-        learnswifss.text=learnswifss.text!+"7"
+        if (agian == 1)
+        {
+             learnswifss.text=learnswifss.text!+"7"
+        }
+        else{
+            learnswifss.text = "7"
+        }
+        agian = 1
     }
     @IBAction func button8(_ sender: Any)
     {
-        learnswifss.text=learnswifss.text!+"8"
+        if (agian == 1)
+        {
+             learnswifss.text=learnswifss.text!+"8"
+        }
+        else{
+            learnswifss.text = "8"
+        }
+        agian = 1
     }
     @IBAction func button9(_ sender: Any)
     {
-        learnswifss.text=learnswifss.text!+"9"
+        if (agian == 1)
+        {
+            learnswifss.text=learnswifss.text!+"9"
+        }
+        else{
+            learnswifss.text = "9"
+        }
+        agian = 1
     }
     @IBAction func button0(_ sender: Any)
     {
-        learnswifss.text=learnswifss.text!+"0"
+        if (agian == 1)
+        {
+            learnswifss.text=learnswifss.text!+"0"
+        }
+        else{
+            learnswifss.text = "0"
+        }
+        agian = 1
     }
     @IBAction func buttonlearnswif(_ sender: Any)
     {
@@ -80,34 +151,44 @@ class ViewController: UIViewController
             bull = temp / Int(learnswifss.text!)!
             learnswifss.text = "\(bull)"
         }
-        
+        agian = 2
     }
     @IBAction func buttonadd(_ sender: Any)
     {
+        if (ap == 1 ){
+            temp = (temp + Int(learnswifss.text!)!)
+            learnswifss.text = "\(temp)"
+        }
         temp = Int(learnswifss.text!)!
-        learnswifss.text = ""
+        agian = 2
         ap = 1
     }
     @IBAction func buttonminus(_ sender: Any)
     {
         temp = Int(learnswifss.text!)!
         learnswifss.text = ""
+        agian = 2
         ap = 2
     }
     @IBAction func buttonclear(_ sender: Any)
     {
         learnswifss.text = ""
+        ap = 0
+        temp = 0
+        agian = 0
     }
     @IBAction func buttontimes(_ sender: Any)
     {
         temp = Int(learnswifss.text!)!
         learnswifss.text = ""
+        agian = 2
         ap = 3
     }
     @IBAction func buttoninto(_ sender: Any)
     {
         temp = Int(learnswifss.text!)!
         learnswifss.text = ""
+        agian = 2
         ap = 4
     }
     
