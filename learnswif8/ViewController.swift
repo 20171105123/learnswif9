@@ -165,8 +165,11 @@ class ViewController: UIViewController
     }
     @IBAction func buttonminus(_ sender: Any)
     {
+        if(ap == 2){
+            temp = (temp - Int(learnswifss.text!)!)
+            learnswifss.text = "\(temp)"
+        }
         temp = Int(learnswifss.text!)!
-        learnswifss.text = ""
         agian = 2
         ap = 2
     }
@@ -179,15 +182,21 @@ class ViewController: UIViewController
     }
     @IBAction func buttontimes(_ sender: Any)
     {
-        temp = Int(learnswifss.text!)!
-        learnswifss.text = ""
+        if(ap == 3){
+            temp = (temp * Int(learnswifss.text!)!)
+            learnswifss.text = ""
+        }
+       temp = Int(learnswifss.text!)!
         agian = 2
         ap = 3
     }
     @IBAction func buttoninto(_ sender: Any)
     {
-        temp = Int(learnswifss.text!)!
-        learnswifss.text = ""
+        if(ap == 4){
+            temp = (temp / Int(learnswifss.text!)!)
+            learnswifss.text = "\(temp)"
+        }
+       temp = Int(learnswifss.text!)!
         agian = 2
         ap = 4
     }
@@ -196,13 +205,6 @@ class ViewController: UIViewController
     {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-    }
-    @IBAction func buttonx3(_ sender: Any)
-    {
-        var b = 0;
-        temp = Int(learnswifss.text!)!
-        b = temp*temp*temp
-        learnswifss.text = "\(b)"
     }
     @IBAction func buttonx²(_ sender: Any)
     {
